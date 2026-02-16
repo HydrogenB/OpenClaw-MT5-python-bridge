@@ -14,11 +14,16 @@ This skill allows OpenClaw to control MetaTrader 5.
 ## Usage
 You can use the `mt5_client.py` script to perform actions.
 
-### Get Account Info
-Run the python script to get account information.
-```bash
-python3 mt5_client.py
-```
+### API Methods (For AI Agent Use)
+The `mt5_client.py` module exposes these helper functions for easy data retrieval:
+- `get_account_dict()`: Returns account details (Balance, Equity, etc).
+- `get_positions_list()`: Returns list of current open positions.
+- `get_history_orders(hours=24)`: Returns list of orders from last N hours.
+- `get_history_deals(hours=24)`: Returns list of deals from last N hours.
 
-### Extending functionality
-The `mt5_client.py` currently connects and prints account info. You can modify it to accept arguments for specific trades or data retrieval.
+### Usage Example
+```python
+import mt5_client
+history = mt5_client.get_history_orders(24)
+print(history)
+```
