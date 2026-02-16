@@ -68,3 +68,7 @@ The bridge now supports a production-ready feature set:
 - **Invalid Message Type / Protocol Error**: Check `pip show rpyc` on both machines. They must perfectly match (e.g., both 5.2.3).
 - **Pickling Disabled**: Ensure client connects with `config={"allow_pickle": True}`.
 - **Empty History**: Ensure you are using `timestamp()` integers for date ranges to avoid timezone issues.
+
+## Author
+**Jirad Srirattana-aporn**  
+[LinkedIn Profile](https://th.linkedin.com/in/jirads)
