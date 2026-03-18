@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+MetaTrader5
+requests
+pydantic
+pandas
+pandas_ta
+rich
